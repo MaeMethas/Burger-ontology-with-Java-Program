@@ -5,6 +5,6 @@
   <img src = "https://contrib.rocks/image?repo=MaeMethas/Burger-ontology-with-Java-Program"/>
 </a>
 
-<a href = "https://github.com/non-nattawut?tab=repositories">
+<a href = "https://github.com/non-nattawut">
   <img src = "https://contrib.rocks/image?repo=non-nattawut/non-nattawut"/>
 </a>
