@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/methas/ontologies/2566/0/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/methas/ontologies/2566/0/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:burger="http://www.semanticweb.org/burger#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/burger"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/burger#name -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/burger#name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/burger#hasBun -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/burger#hasBun">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/burger#Bun"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#hasCheese -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/burger#hasCheese">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/burger#Cheese"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#hasCondiment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/burger#hasCondiment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/burger#Condiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#hasPatty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/burger#hasPatty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/burger#Patty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#hasVegetable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/burger#hasVegetable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/burger#Vegetable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Bun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Bun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Burger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Burger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Junkfood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Cheese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Cheese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Cheese_Burger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Cheese_Burger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Condiment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Condiment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Junkfood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Junkfood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Mini_Burger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Mini_Burger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Patty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Patty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Patty_Burgur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Patty_Burgur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Snack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Snack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Thai_Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Thai_Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Vegetable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/burger#Vegetable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/burger#American_cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#American_cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>American cheese</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Bacon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Bacon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Condiment"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>Bacon</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Bacon_cheese_burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Bacon_cheese_burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese_Burger"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Brioche_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#American_cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Bacon"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Mustard"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Lettuce"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Tomato"/>
+        <burger:name>Bacon cheese burger</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Beef_cheese_burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Beef_cheese_burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese_Burger"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Sesame_seed_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#American_cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Ketchup"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Lettuce"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Onion"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Tomato"/>
+        <burger:name>Beef cheese burger</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Beef_patty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Beef_patty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Patty"/>
+        <burger:name>Beef patty</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Beef_patty_burgur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Beef_patty_burgur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Patty_Burgur"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Sesame_seed_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#No_Cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#No_Condiment"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#No_Vegetable"/>
+        <burger:name>Beef patty burgur</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Black_and_blue_burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Black_and_blue_burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese_Burger"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Sesame_seed_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#Blue_cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#No_Condiment"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Lettuce"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Tomato"/>
+        <burger:name>Black and blue burger</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Blue_cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Blue_cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>Blue cheese</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Brioche_bun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Brioche_bun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Bun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>Brioche bun</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Chicken_cheese_burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Chicken_cheese_burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese_Burger"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Sesame_seed_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#American_cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Mustard"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Chicken_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Lettuce"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Onion"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Tomato"/>
+        <burger:name>Chicken cheese burger</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Chicken_patty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Chicken_patty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Patty"/>
+        <burger:name>Chicken patty</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Chicken_patty_burgur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Chicken_patty_burgur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Patty_Burgur"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Sesame_seed_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#No_Cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#No_Condiment"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Chicken_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#No_Vegetable"/>
+        <burger:name>Chicken patty burgur</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Double_cheese_burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Double_cheese_burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese_Burger"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Sesame_seed_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#American_cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Ketchup"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Lettuce"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Onion"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Tomato"/>
+        <burger:name>Double cheese burger</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Juicy_lucy_burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Juicy_lucy_burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese_Burger"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Brioche_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#American_cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#No_Condiment"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#No_Vegetable"/>
+        <burger:name>Juicy lucy burger</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Ketchup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Ketchup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Condiment"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>Ketchup</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Lettuce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Lettuce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Vegetable"/>
+        <burger:name>Lettuce</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Mushroom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Mushroom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Vegetable"/>
+        <burger:name>Mushroom</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Mushroom_and_Swiss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Mushroom_and_Swiss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese_Burger"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Brioche_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#Swiss_cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Ketchup"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Mushroom"/>
+        <burger:name>Mushroom and Swiss</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Mustard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Mustard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Condiment"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>Mustard</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#No_Cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#No_Cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese"/>
+        <burger:name>-</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#No_Condiment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#No_Condiment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Condiment"/>
+        <burger:name>-</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#No_Vegetable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#No_Vegetable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Vegetable"/>
+        <burger:name>-</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Onion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Onion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Vegetable"/>
+        <burger:name>Onion</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Patty_melt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Patty_melt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Patty_Burgur"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Sliced_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#No_Cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#No_Condiment"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#No_Vegetable"/>
+        <burger:name>Patty melt</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Sesame_seed_bun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Sesame_seed_bun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Bun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>Sesame seed bun</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Sliced_bun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Sliced_bun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Bun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>Sliced bun</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Slider_burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Slider_burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Mini_Burger"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#Sliced_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#No_Cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Ketchup"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Mustard"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#No_Vegetable"/>
+        <burger:name>Slider burger</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Swiss_cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Swiss_cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Cheese"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>Swiss cheese</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#The_Works -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#The_Works">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Burger"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Mini_Burger"/>
+        <burger:hasBun rdf:resource="http://www.semanticweb.org/burger#mini_Sesame_seed_bun"/>
+        <burger:hasCheese rdf:resource="http://www.semanticweb.org/burger#No_Cheese"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Ketchup"/>
+        <burger:hasCondiment rdf:resource="http://www.semanticweb.org/burger#Mustard"/>
+        <burger:hasPatty rdf:resource="http://www.semanticweb.org/burger#Beef_patty"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Lettuce"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Onion"/>
+        <burger:hasVegetable rdf:resource="http://www.semanticweb.org/burger#Tomato"/>
+        <burger:name>The Works</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#Tomato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#Tomato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Vegetable"/>
+        <burger:name>Tomato</burger:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/burger#mini_Sesame_seed_bun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/burger#mini_Sesame_seed_bun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Bun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/burger#Ingredient"/>
+        <burger:name>mini Sesame seed bun</burger:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
